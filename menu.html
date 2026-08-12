@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' file:; style-src 'self' 'unsafe-inline' file: https://fonts.googleapis.com; font-src 'self' file: https://fonts.gstatic.com; img-src 'self' data: blob: file: https://images.unsplash.com; connect-src 'self' file: https://fonts.googleapis.com https://fonts.gstatic.com; base-uri 'self' file:; form-action 'self' file:; frame-ancestors 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Our Menu — Sweet Blooms by Abi</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=24">
+</head>
+<body>
+
+<!-- Fixed navigation -->
+<nav class="menu">
+  <div class="menu_wrap">
+    <div class="menu_links">
+      <a href="index.html" class="nav_link">Home</a>
+      <a href="menu.html" class="nav_link active">Menu</a>
+      <a href="index.html#about" class="nav_link">Our Story</a>
+      <a href="index.html#contact" class="nav_link">Contact</a>
+    </div>
+    <a href="index.html" class="menu_logo">
+      <img src="logo.png" alt="Sweet Blooms by Abi logo">
+      <span>Sweet Blooms <span class="script">by Abi</span></span>
+    </a>
+    <div class="menu_actions">
+      <a class="btn btn-solid" href="index.html#order">Order Now</a>
+      <button class="menu_trigger" id="menuTrigger" aria-label="Toggle menu">
+        <span>Menu</span>
+        <span class="menu_burger">
+          <span class="menu_burger-line"></span>
+          <span class="menu_burger-line"></span>
+          <span class="menu_burger-line"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="menu_opened-wrap" id="menuOpened">
+    <a href="index.html" class="nav_link">Home</a>
+    <a href="menu.html" class="nav_link active">Menu</a>
+    <a href="index.html#about" class="nav_link">Our Story</a>
+    <a href="index.html#order" class="nav_link">Order</a>
+    <a href="index.html#contact" class="nav_link">Contact</a>
+  </div>
+</nav>
+
+<main id="top">
+<!-- MENU HERO -->
+<section class="menu-hero">
+  <div class="wrap">
+    <span class="eyebrow">Our menu</span>
+    <h1 class="title-xl" style="margin-top:16px;">Freshness in <span class="script scribble" style="color:var(--rose-deep);">every bite<svg viewBox="0 0 120 20" aria-hidden="true"><path d="M2 14 C 20 6, 40 16, 60 10 S 100 14, 118 8"/></svg></span></h1>
+    <p class="txt-size-l" style="max-width:640px; margin:1.2rem auto 0; color:var(--ink-soft);">Everything is baked fresh to order with quality ingredients. Message us on WhatsApp for details based on size, flavour and design.</p>
+  </div>
+  <div class="menu-hero-tags" aria-hidden="false">
+    <a class="menu-hero-tag _1" href="#cakes">Cakes</a>
+    <a class="menu-hero-tag _2" href="#cupcakes">Cupcakes</a>
+    <a class="menu-hero-tag _3" href="#brownies">Brownies</a>
+    <a class="menu-hero-tag _4" href="#cookies">Cookies</a>
+  </div>
+</section>
+
+<!-- FILMSTRIP -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee_wrap">
+    <div class="marquee_img"><img src="images/ig-post-01.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-02.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-04.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-05.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-06.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-07.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-08.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-09.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-10.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-11.jpg" alt=""></div>
+  </div>
+</section>
+
+<!-- CATEGORY NAV -->
+<nav class="cat-nav" aria-label="Menu categories">
+  <div class="wrap">
+    <ul>
+      <li><a href="#cakes">Cakes</a></li>
+      <li><a href="#cupcakes">Cupcakes</a></li>
+      <li><a href="#brownies">Brownies</a></li>
+      <li><a href="#cookies">Cookies</a></li>
+      <li><a href="#celebration">Celebration Cakes</a></li>
+      <li><a href="#custom">Custom Orders</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- CAKES -->
+<section class="menu-section wrap" id="cakes">
+  <div class="menu-section-head reveal">
+    <span class="eyebrow">everyday &amp; special</span>
+    <h2 class="title-l">Cakes</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="menu-grid">
+    <div class="m-item reveal">
+      <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80" alt="Strawberry cream cake">
+      <div class="m-body">
+        <h3>Strawberry Cream</h3>
+        <p>Soft vanilla sponge with fresh strawberry cream — the classic everyone loves.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20a%20Strawberry%20Cream%20Cake" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal">
+      <img src="images/ig-post-12.jpg" alt="Chocolate fudge cake">
+      <div class="m-body">
+        <h3>Chocolate Fudge</h3>
+        <p>Rich chocolate sponge with silky ganache — for the serious chocolate lovers.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20a%20Chocolate%20Fudge%20Cake" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal">
+      <img src="images/ig-post-18.jpg" alt="Classic vanilla cake">
+      <div class="m-body">
+        <h3>Classic Vanilla</h3>
+        <p>Classic vanilla sponge with light buttercream — simple, elegant, delicious.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20a%20Classic%20Vanilla%20Cake" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal m-item-more">
+      <img src="https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=800&q=80" alt="Red velvet cake">
+      <div class="m-body">
+        <h3>Red Velvet</h3>
+        <p>Velvety red sponge with cream cheese frosting — a crowd favourite.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20a%20Red%20Velvet%20Cake" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+  </div>
+<button class="btn menu-more-btn" type="button" aria-expanded="false">More</button>
+</section>
+
+<!-- CUPCAKES -->
+<section class="menu-section wrap" id="cupcakes">
+  <div class="menu-section-head reveal">
+    <span class="eyebrow">bite-sized</span>
+    <h2 class="title-l">Cupcakes</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="menu-grid">
+    <div class="m-item reveal">
+      <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=800&q=80" alt="Vanilla cupcakes">
+      <div class="m-body">
+        <h3>Vanilla Swirl</h3>
+        <p>Soft vanilla cupcake with a cloud of vanilla buttercream.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20Vanilla%20Cupcakes" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal">
+      <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=800&q=80" alt="Chocolate cupcakes">
+      <div class="m-body">
+        <h3>Chocolate Fudge</h3>
+        <p>Rich chocolate cupcake topped with glossy chocolate fudge frosting.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20Chocolate%20Cupcakes" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal">
+      <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=800&q=80" alt="Red velvet cupcakes">
+      <div class="m-body">
+        <h3>Red Velvet</h3>
+        <p>Velvety red sponge with cream cheese frosting — a crowd favourite.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20Red%20Velvet%20Cupcakes" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal m-item-more">
+      <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=800&q=80" alt="Strawberry cupcakes">
+      <div class="m-body">
+        <h3>Strawberry Cream</h3>
+        <p>Fresh strawberry buttercream on a light vanilla base — sweet and summery.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20Strawberry%20Cupcakes" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+  </div>
+<button class="btn menu-more-btn" type="button" aria-expanded="false">More</button>
+</section>
+
+<!-- BROWNIES -->
+<section class="menu-section wrap" id="brownies">
+  <div class="menu-section-head reveal">
+    <span class="eyebrow">fudgy &amp; rich</span>
+    <h2 class="title-l">Brownies</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="menu-grid">
+    <div class="m-item reveal">
+      <img src="images/ig-post-21.jpg" alt="Classic brownies">
+      <div class="m-body">
+        <h3>Classic Fudge</h3>
+        <p>Dense, fudgy and deeply chocolatey — the way a brownie should be.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20Classic%20Fudge%20Brownies" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal">
+      <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Walnut brownies">
+      <div class="m-body">
+        <h3>Walnut Crunch</h3>
+        <p>Fudgy brownies studded with toasted walnuts for a little crunch.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20Walnut%20Crunch%20Brownies" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal">
+      <img src="https://images.unsplash.com/photo-1607920591413-4ec007e70023?auto=format&fit=crop&w=800&q=80" alt="Caramel brownies">
+      <div class="m-body">
+        <h3>Salted Caramel</h3>
+        <p>Swirled with salted caramel and finished with a flaky sea salt.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20Salted%20Caramel%20Brownies" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal m-item-more">
+      <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80" alt="Cheesecake brownies">
+      <div class="m-body">
+        <h3>Cheesecake Swirl</h3>
+        <p>Fudgy brownie meets creamy cheesecake in one irresistible bite.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20Cheesecake%20Swirl%20Brownies" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+  </div>
+<button class="btn menu-more-btn" type="button" aria-expanded="false">More</button>
+</section>
+
+<!-- COOKIES -->
+<section class="menu-section wrap" id="cookies">
+  <div class="menu-section-head reveal">
+    <span class="eyebrow">soft-baked</span>
+    <h2 class="title-l">Cookies</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="menu-grid">
+    <div class="m-item reveal">
+      <img src="images/ig-post-22.jpg" alt="Chocolate chip cookies">
+      <div class="m-body">
+        <h3>Chocolate Chip</h3>
+        <p>Soft-baked with pools of melted chocolate — the timeless classic.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20Chocolate%20Chip%20Cookies" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal">
+      <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=80" alt="Oatmeal cookies">
+      <div class="m-body">
+        <h3>Oatmeal Raisin</h3>
+        <p>Chewy oats, plump raisins and a hint of cinnamon — wholesome and sweet.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20Oatmeal%20Raisin%20Cookies" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal">
+      <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80" alt="Double chocolate cookies">
+      <div class="m-body">
+        <h3>Double Chocolate</h3>
+        <p>Dark cocoa dough loaded with chocolate chunks — for true chocoholics.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20Double%20Chocolate%20Cookies" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal m-item-more">
+      <img src="https://images.unsplash.com/photo-1548365328-8c6db3220e4c?auto=format&fit=crop&w=800&q=80" alt="Macadamia cookies">
+      <div class="m-body">
+        <h3>White Choc Macadamia</h3>
+        <p>Buttery cookies with white chocolate and toasted macadamia nuts.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20White%20Choc%20Macadamia%20Cookies" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+  </div>
+<button class="btn menu-more-btn" type="button" aria-expanded="false">More</button>
+</section>
+
+<!-- CELEBRATION CAKES -->
+<section class="menu-section wrap" id="celebration">
+  <div class="menu-section-head reveal">
+    <span class="eyebrow">celebrate</span>
+    <h2 class="title-l">Celebration Cakes</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="menu-grid">
+    <div class="m-item reveal">
+      <img src="images/ig-post-15.jpg" alt="Classic birthday cake">
+      <div class="m-body">
+        <h3>Classic Birthday</h3>
+        <p>Beautifully finished with buttercream and fresh flowers — timeless and elegant.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20a%20Classic%20Birthday%20Cake" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal">
+      <img src="images/ig-post-13.jpg" alt="Themed birthday cake">
+      <div class="m-body">
+        <h3>Themed Celebration</h3>
+        <p>Cartoon characters, hobbies, colours — designed around the guest of honour.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20a%20Themed%20Birthday%20Cake" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal">
+      <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=800&q=80" alt="Photo cake">
+      <div class="m-body">
+        <h3>Photo Cake</h3>
+        <p>Edible photo prints of your favourite memories — a personal touch they'll love.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20a%20Photo%20Cake" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal m-item-more">
+      <img src="https://images.unsplash.com/photo-1577415124269-fc1140a69e91?auto=format&fit=crop&w=800&q=80" alt="Number cake">
+      <div class="m-body">
+        <h3>Number Cake</h3>
+        <p>Their age, in cake form — decorated with cream, fruit and your favourite sweets.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20a%20Number%20Cake" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+  </div>
+<button class="btn menu-more-btn" type="button" aria-expanded="false">More</button>
+</section>
+
+<!-- CUSTOM -->
+<section class="menu-section wrap" id="custom">
+  <div class="menu-section-head reveal">
+    <span class="eyebrow">made for you</span>
+    <h2 class="title-l">Custom Orders</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="menu-grid">
+    <div class="m-item reveal">
+      <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=800&q=80" alt="Wedding cake">
+      <div class="m-body">
+        <h3>Wedding Cakes</h3>
+        <p>Elegant multi-tier cakes designed around your theme, colours and flowers.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20Wedding%20Cake" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal">
+      <img src="https://images.unsplash.com/photo-1574085733277-851d9d856a3a?auto=format&fit=crop&w=800&q=80" alt="Anniversary cake">
+      <div class="m-body">
+        <h3>Anniversary Cakes</h3>
+        <p>Romantic designs to mark the milestones — from one year to fifty.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20discuss%20an%20Anniversary%20Cake" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal">
+      <img src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&w=800&q=80" alt="Baby shower cake">
+      <div class="m-body">
+        <h3>Baby Shower Cakes</h3>
+        <p>Sweet pastel designs to welcome the little one — gender reveal options too.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20Baby%20Shower%20Cake" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+    <div class="m-item reveal m-item-more">
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Corporate cake">
+      <div class="m-body">
+        <h3>Corporate &amp; Events</h3>
+        <p>Branded cakes and dessert tables for launches, parties and office celebrations.</p>
+        <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20Corporate%20Cake" target="_blank" rel="noopener noreferrer">Order</a>
+      </div>
+    </div>
+  </div>
+<button class="btn menu-more-btn" type="button" aria-expanded="false">More</button>
+</section>
+
+<!-- MENU CTA -->
+<section class="callout">
+  <div class="callout-ribbon" aria-hidden="true">
+    <div class="callout-ribbon-track">
+      <span>Sweet Blooms ✿</span><span>Freshness in every bite ✿</span><span>Sweet Blooms ✿</span><span>Freshness in every bite ✿</span>
+    </div>
+  </div>
+  <div class="wrap reveal">
+    <div class="title-display">Let's design something <span class="script">together</span></div>
+    <p>Tell us your occasion, size and flavour on WhatsApp — we'll get baking.</p>
+    <a class="btn btn-light" href="https://wa.me/94767691862?text=Hi%20Sweet%20Blooms%20by%20Abi%2C%20I%27d%20love%20to%20order%20a%20cake!" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 003.6 17.3L2 22l4.8-1.6a11 11 0 0013.7-16.9zM12 20a8.4 8.4 0 01-4.3-1.2l-.3-.2-3.2 1 1-3.1-.2-.3A8.4 8.4 0 1120 12a8.4 8.4 0 01-8 8zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.1-.3 0-.4.1-.6l.4-.5c.1-.1.2-.2.2-.4.1-.2 0-.5 0-.5L8.9 7.3c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+      Message us on WhatsApp
+    </a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-news">
+      <div>
+        <h4>Get sweet updates</h4>
+        <p>New flavours, seasonal specials and order reminders — straight to your inbox.</p>
+      </div>
+      <form class="footer-news-form" id="newsForm">
+        <input type="text" name="news-name" placeholder="Your name" required aria-label="Your name">
+        <input type="email" name="news-email" placeholder="Email address" required aria-label="Email address">
+        <button type="submit" aria-label="Subscribe">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m0 0l-6-6m6 6l-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+    </div>
+    <div class="footer_inner">
+      <div>
+        <div class="logo">
+          <img src="logo.png" alt="Sweet Blooms by Abi logo">
+          <span>Sweet Blooms <span class="script">by Abi</span></span>
+        </div>
+        <span class="footer-tagline">Freshness in every bite ✿</span>
+        <div class="footer-social">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 2c-3.1 0-3.5 0-4.8.1-1.1.1-1.5.2-1.8.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.3-.3.7-.3 1.8-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.5.3 1.8.2.5.4.8.7 1.1.3.3.6.5 1.1.7.3.1.7.3 1.8.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.5-.2 1.8-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.3.3-.7.3-1.8.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.5-.3-1.8-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.3-.1-.7-.3-1.8-.3-1.3-.1-1.7-.1-4.8-.1zm0 3.3a5.5 5.5 0 110 11 5.5 5.5 0 010-11zm0 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.7-3.3a1.3 1.3 0 110 2.6 1.3 1.3 0 010-2.6z"/></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.6V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.3H7.6V13h2.7v8h3.2z"/></svg>
+          </a>
+          <a href="https://wa.me/94767691862" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 003.6 17.3L2 22l4.8-1.6a11 11 0 0013.7-16.9zM12 20a8.4 8.4 0 01-4.3-1.2l-.3-.2-3.2 1 1-3.1-.2-.3A8.4 8.4 0 1120 12a8.4 8.4 0 01-8 8zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.1-.3 0-.4.1-.6l.4-.5c.1-.1.2-.2.2-.4.1-.2 0-.5 0-.5L8.9 7.3c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="index.html#order">Order</a>
+          <a href="index.html#about">Our Story</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>WhatsApp: +94 76 769 1862<br>
+        Open daily: 9.00 AM – 9.00 PM<br>
+        Sri Lanka — local delivery available</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sweet Blooms by Abi. All rights reserved.</span>
+      <span>Made with love in Sri Lanka</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/94767691862?text=Hi%20Sweet%20Blooms%20by%20Abi%2C%20I%27d%20love%20to%20order%20a%20cake!" target="_blank" rel="noopener noreferrer" aria-label="Order on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M20.5 3.5A11 11 0 003.6 17.3L2 22l4.8-1.6a11 11 0 0013.7-16.9zM12 20a8.4 8.4 0 01-4.3-1.2l-.3-.2-3.2 1 1-3.1-.2-.3A8.4 8.4 0 1120 12a8.4 8.4 0 01-8 8zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.1-.3 0-.4.1-.6l.4-.5c.1-.1.2-.2.2-.4.1-.2 0-.5 0-.5L8.9 7.3c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<!-- Cart -->
+<button class="cart-fab" id="cartFab" type="button" aria-label="View your order" hidden>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+  </svg>
+  <span class="cart-count" id="cartCount">0</span>
+</button>
+
+<div class="cart-panel" id="cartPanel" aria-hidden="true">
+  <div class="cart-panel-head">
+    <h3>Your Order</h3>
+    <button class="cart-close" id="cartClose" type="button" aria-label="Close your order">✕</button>
+  </div>
+
+  <div class="cart-view" id="cartView">
+    <div class="cart-items" id="cartItems"></div>
+    <p class="cart-empty" id="cartEmpty">Your cart is empty — add something sweet from the menu.</p>
+    <div class="cart-foot">
+      <div class="cart-total">Total items: <span id="cartTotal">0</span></div>
+      <button class="btn" id="cartCheckout" type="button">Finalize order</button>
+    </div>
+  </div>
+
+  <div class="cart-checkout" id="cartCheckoutView" hidden>
+    <p class="cart-checkout-intro">Almost done — tell us who to contact and when you need it.</p>
+    <label class="cart-field">
+      <span>Name</span>
+      <input type="text" id="co-name" autocomplete="name" required>
+    </label>
+    <label class="cart-field">
+      <span>Phone</span>
+      <input type="tel" id="co-phone" autocomplete="tel" required>
+    </label>
+    <label class="cart-field">
+      <span>Date needed (optional)</span>
+      <input type="date" id="co-date">
+    </label>
+    <label class="cart-field">
+      <span>Notes (optional)</span>
+      <textarea id="co-notes" rows="3"></textarea>
+    </label>
+    <div class="cart-checkout-actions">
+      <button class="btn" id="cartBack" type="button">Back</button>
+      <button class="btn" id="cartSend" type="button">Send order via WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+<div class="cart-overlay" id="cartOverlay" hidden></div>
+<div class="cart-toast" id="cartToast" role="status" aria-live="polite" hidden></div>
+
+<script src="main.js?v=24"></script>
+
+</body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' file:; style-src 'self' 'unsafe-inline' file: https://fonts.googleapis.com; font-src 'self' file: https://fonts.gstatic.com; img-src 'self' data: blob: file: https://images.unsplash.com; connect-src 'self' file: https://fonts.googleapis.com https://fonts.gstatic.com; base-uri 'self' file:; form-action 'self' file:; frame-ancestors 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Sweet Blooms by Abi — Custom Cakes</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=24">
+</head>
+<body class="home">
+
+<!-- Fixed navigation -->
+<nav class="menu">
+  <div class="menu_wrap">
+    <div class="menu_links">
+      <a href="index.html" class="nav_link active">Home</a>
+      <a href="menu.html" class="nav_link">Menu</a>
+      <a href="#about" class="nav_link">Our Story</a>
+      <a href="#contact" class="nav_link">Contact</a>
+    </div>
+    <a href="index.html" class="menu_logo">
+      <img src="logo.png" alt="Sweet Blooms by Abi logo">
+      <span>Sweet Blooms <span class="script">by Abi</span></span>
+    </a>
+    <div class="menu_actions">
+      <a class="btn btn-solid" href="#order">Order Now</a>
+      <button class="menu_trigger" id="menuTrigger" aria-label="Toggle menu">
+        <span>Menu</span>
+        <span class="menu_burger">
+          <span class="menu_burger-line"></span>
+          <span class="menu_burger-line"></span>
+          <span class="menu_burger-line"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="menu_opened-wrap" id="menuOpened">
+    <a href="index.html" class="nav_link active">Home</a>
+    <a href="menu.html" class="nav_link">Menu</a>
+    <a href="#about" class="nav_link">Our Story</a>
+    <a href="#order" class="nav_link">Order</a>
+    <a href="#contact" class="nav_link">Contact</a>
+  </div>
+</nav>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <span class="hero_eyebrow">Home-baked with love</span>
+    <h1 class="hero_title">Freshness in <span class="accent scribble">every bite<svg viewBox="0 0 120 20" aria-hidden="true"><path d="M2 14 C 20 6, 40 16, 60 10 S 100 14, 118 8"/></svg></span></h1>
+    <p class="hero_tag">Cakes, cupcakes, brownies and cookies — baked fresh to order, made with love and served with a smile at Sweet Blooms by Abi.</p>
+    <div class="hero_ctas">
+      <a class="btn btn-solid" href="https://wa.me/94767691862?text=Hi%20Sweet%20Blooms%20by%20Abi%2C%20I%27d%20love%20to%20order%20a%20cake!" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 003.6 17.3L2 22l4.8-1.6a11 11 0 0013.7-16.9zM12 20a8.4 8.4 0 01-4.3-1.2l-.3-.2-3.2 1 1-3.1-.2-.3A8.4 8.4 0 1120 12a8.4 8.4 0 01-8 8zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.1-.3 0-.4.1-.6l.4-.5c.1-.1.2-.2.2-.4.1-.2 0-.5 0-.5L8.9 7.3c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+        Order Now
+      </a>
+      <a class="btn btn-light" href="menu.html">View Menu</a>
+      </div>
+      <div class="hero-trust">
+        <span class="hero-trust-item">5★ rated</span>
+        <span class="hero-trust-item">Baked fresh to order</span>
+        <span class="hero-trust-item">Local delivery</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-main"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="Chocolate layer cake" fetchpriority="high"></div>
+      <div class="hero-img-float _1"><img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&q=80" alt="Cake with fresh berries" loading="lazy"></div>
+      <div class="hero-img-float _2"><img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=600&q=80" alt="Cupcakes with buttercream swirls" loading="lazy"></div>
+      <div class="hero-badge" aria-hidden="true">Fresh today ✿</div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<section class="marquee reveal" aria-hidden="true">
+  <div class="marquee_wrap">
+    <div class="marquee_img"><img src="images/ig-post-01.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-02.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-04.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-05.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-06.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-07.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-08.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-09.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-10.jpg" alt=""></div>
+    <div class="marquee_img"><img src="images/ig-post-11.jpg" alt=""></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What we bake</span>
+      <h2>Something for every craving</h2>
+      <p>From everyday treats to celebration centrepieces — all baked fresh to order.</p>
+    </div>
+    <div class="services_cards">
+      <div class="service_card reveal">
+        <img class="service_card-img" src="images/ig-post-12.jpg" alt="Chocolate cake" loading="lazy">
+        <h3>Cakes</h3>
+        <button class="service_card-toggle" type="button" aria-expanded="false" aria-controls="svc-cakes" aria-label="Show details for Cakes">
+          <svg class="plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+        </button>
+        <div class="service_card-more" id="svc-cakes">
+          <p>Layered, frosted and finished to perfection for every occasion.</p>
+          <div class="service_card-tags"><span>Birthday</span><span>Wedding</span><span>Custom</span></div>
+          <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20a%20cake!" target="_blank" rel="noopener noreferrer">Order now</a>
+        </div>
+      </div>
+      <div class="service_card reveal">
+        <img class="service_card-img" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80" alt="Cupcakes with frosting" loading="lazy">
+        <h3>Cupcakes &amp; treats</h3>
+        <button class="service_card-toggle" type="button" aria-expanded="false" aria-controls="svc-cupcakes" aria-label="Show details for Cupcakes and treats">
+          <svg class="plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+        </button>
+        <div class="service_card-more" id="svc-cupcakes">
+          <p>Bite-sized happiness with swirls of buttercream on top.</p>
+          <div class="service_card-tags"><span>Cupcakes</span><span>Brownies</span><span>Cookies</span></div>
+          <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20order%20cupcakes%20or%20treats!" target="_blank" rel="noopener noreferrer">Order now</a>
+        </div>
+      </div>
+      <div class="service_card reveal">
+        <img class="service_card-img" src="images/ig-post-13.jpg" alt="Custom Minnie Mouse themed cake" loading="lazy">
+        <h3>Custom orders</h3>
+        <button class="service_card-toggle" type="button" aria-expanded="false" aria-controls="svc-custom" aria-label="Show details for Custom orders">
+          <svg class="plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+        </button>
+        <div class="service_card-more" id="svc-custom">
+          <p>Tell us your vision — we'll bake it to life, just for you.</p>
+          <div class="service_card-tags"><span>Bento</span><span>Themed</span><span>Corporate</span></div>
+          <a class="btn" href="https://wa.me/94767691862?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20custom%20order!" target="_blank" rel="noopener noreferrer">Order now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS / FEATURED -->
+<section class="works" id="featured">
+  <div class="wrap">
+    <div class="works_inner">
+      <div class="works_side reveal">
+        <div class="section-head">
+          <span class="eyebrow">Signature bakes</span>
+          <h2>From our kitchen</h2>
+          <p>A taste of what we bake — explore the full menu for every occasion.</p>
+        </div>
+        <a class="btn btn-dark" href="menu.html">View the full menu</a>
+      </div>
+      <div class="works_grid">
+      <div class="work_card reveal">
+        <div class="work_card-img-wrap">
+          <img class="reveal-img" src="images/ig-post-14.jpg" alt="Bento cake">
+        </div>
+        <div class="work_card-content">
+          <div class="work_card-categories"><span>Bento</span></div>
+          <h3>Bento Cakes</h3>
+          <p>Small, personal cakes in a box with your message on top — the sweetest gift for any occasion.</p>
+        </div>
+      </div>
+      <div class="work_card reveal">
+        <div class="work_card-img-wrap">
+          <img class="reveal-img" src="images/ig-post-15.jpg" alt="Birthday cake">
+        </div>
+        <div class="work_card-content">
+          <div class="work_card-categories"><span>Birthday</span></div>
+          <h3>Birthday Cakes</h3>
+          <p>Fun, colourful and full of personality — themed birthday cakes designed around the guest of honour.</p>
+        </div>
+      </div>
+      <div class="work_card reveal">
+        <div class="work_card-img-wrap">
+          <img class="reveal-img" src="images/ig-post-16.jpg" alt="Custom cake">
+        </div>
+        <div class="work_card-content">
+          <div class="work_card-categories"><span>Custom</span></div>
+          <h3>Custom Cakes</h3>
+          <p>Weddings, anniversaries, themed celebrations — tell us your vision and we'll design a cake around it.</p>
+        </div>
+      </div>
+      <div class="work_card reveal">
+        <div class="work_card-img-wrap">
+          <img class="reveal-img" src="images/ig-post-17.jpg" alt="Chocolate cake">
+        </div>
+        <div class="work_card-content">
+          <div class="work_card-categories"><span>Chocolate</span></div>
+          <h3>Chocolate Fudge</h3>
+          <p>Silky ganache over rich chocolate sponge — the serious chocolate lover's favourite.</p>
+        </div>
+      </div>
+      <div class="work_card reveal">
+        <div class="work_card-img-wrap">
+          <img class="reveal-img" src="images/ig-post-18.jpg" alt="Vanilla cake">
+        </div>
+        <div class="work_card-content">
+          <div class="work_card-categories"><span>Classic</span></div>
+          <h3>Classic Vanilla</h3>
+          <p>Light vanilla sponge with silky buttercream — simple, elegant, always a hit.</p>
+        </div>
+      </div>
+      <div class="work_card reveal">
+        <div class="work_card-img-wrap">
+          <img class="reveal-img" src="images/ig-post-21.jpg" alt="Brownies">
+        </div>
+        <div class="work_card-content">
+          <div class="work_card-categories"><span>Brownies</span></div>
+          <h3>Fudgy Brownies</h3>
+          <p>Dense, fudgy and deeply chocolatey — the perfect treat box addition.</p>
+        </div>
+      </div>
+      <div class="work_card reveal">
+        <div class="work_card-img-wrap">
+          <img class="reveal-img" src="images/ig-post-22.jpg" alt="Cookies">
+        </div>
+        <div class="work_card-content">
+          <div class="work_card-categories"><span>Cookies</span></div>
+          <h3>Soft-Baked Cookies</h3>
+          <p>Pools of melted chocolate in every bite — baked soft, delivered fresh.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cursor-follow VIEW badge -->
+<div class="work_cursor" id="workCursor" aria-hidden="true">View</div>
+
+<!-- CALLOUT -->
+<section class="callout">
+  <div class="callout-ribbon" aria-hidden="true">
+    <div class="callout-ribbon-track">
+      <span>Sweet Blooms ✿</span><span>Freshness in every bite ✿</span><span>Sweet Blooms ✿</span><span>Freshness in every bite ✿</span>
+    </div>
+  </div>
+  <div class="wrap reveal">
+    <div class="title-display">Ready to <span class="script">order?</span></div>
+    <p>Send us your occasion, size and flavour on WhatsApp and we'll get back to you with a timeline.</p>
+    <a class="btn btn-light" href="https://wa.me/94767691862?text=Hi%20Sweet%20Blooms%20by%20Abi%2C%20I%27d%20love%20to%20order%20a%20cake!" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 003.6 17.3L2 22l4.8-1.6a11 11 0 0013.7-16.9zM12 20a8.4 8.4 0 01-4.3-1.2l-.3-.2-3.2 1 1-3.1-.2-.3A8.4 8.4 0 1120 12a8.4 8.4 0 01-8 8zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.1-.3 0-.4.1-.6l.4-.5c.1-.1.2-.2.2-.4.1-.2 0-.5 0-.5L8.9 7.3c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+      Message us on WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT / STORY -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about_inner reveal">
+      <div class="about_content">
+        <span class="eyebrow">Our story</span>
+        <h2 class="title-l" style="margin-top:16px;">Made with love. Baked fresh.</h2>
+        <p>Sweet Blooms by Abi started with a simple idea — that every celebration deserves something baked with heart. From birthday cakes to wedding centrepieces, we craft each bake fresh to order using quality ingredients.</p>
+        <p>Whether you're after a classic favourite or something completely unique, we work with you to bring your vision to life — one delicious bite at a time.</p>
+        <p class="story-sign">— Abi</p>
+      </div>
+      <div class="about_img-wrap">
+        <img class="reveal-img" src="images/ig-post-23.jpg" alt="Fondant cake on a display stand" data-parallax>
+        <div class="about-badge">Baked fresh to order</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="reviews">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Kind words</span>
+      <h2>What our customers say</h2>
+      <p>Real reviews from real celebrations.</p>
+    </div>
+    <div class="t-grid">
+      <div class="t-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"The bento cake was adorable and tasted amazing — it made my birthday so special!"</p>
+        <div class="t-who">
+          <div class="t-avatar">N</div>
+          <div><strong>Nethmi</strong><span>Colombo</span></div>
+        </div>
+      </div>
+      <div class="t-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Ordered a custom birthday cake and it looked even better than the photo I sent. Highly recommended!"</p>
+        <div class="t-who">
+          <div class="t-avatar">K</div>
+          <div><strong>Kasun</strong><span>Dehiwala</span></div>
+        </div>
+      </div>
+      <div class="t-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Beautiful cupcakes for our baby shower — everyone kept asking where they were from!"</p>
+        <div class="t-who">
+          <div class="t-avatar">I</div>
+          <div><strong>Ishara</strong><span>Nugegoda</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Visit &amp; hours</h2>
+    </div>
+    <div class="contact_inner reveal">
+      <div class="contact-card">
+        <h3>Find us</h3>
+        <div class="info-row">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <div><strong>Opening hours</strong><span>9.00 AM – 9.00 PM, every day</span></div>
+        </div>
+        <div class="info-row">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.5 3.5A11 11 0 003.6 17.3L2 22l4.8-1.6a11 11 0 0013.7-16.9z"/></svg></div>
+          <div><strong>WhatsApp</strong><span>+94 76 769 1862</span></div>
+        </div>
+        <div class="info-row">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><strong>Based in</strong><span>Sri Lanka — local delivery available</span></div>
+        </div>
+      </div>
+      <div class="contact-card cta">
+        <h3>Ready to order?</h3>
+        <p>Send us your occasion, size and flavour on WhatsApp and we'll get back to you with a timeline.</p>
+        <a class="btn btn-light" href="https://wa.me/94767691862?text=Hi%20Sweet%20Blooms%20by%20Abi%2C%20I%27d%20love%20to%20order%20a%20cake!" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 003.6 17.3L2 22l4.8-1.6a11 11 0 0013.7-16.9zM12 20a8.4 8.4 0 01-4.3-1.2l-.3-.2-3.2 1 1-3.1-.2-.3A8.4 8.4 0 1120 12a8.4 8.4 0 01-8 8zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.1-.3 0-.4.1-.6l.4-.5c.1-.1.2-.2.2-.4.1-.2 0-.5 0-.5L8.9 7.3c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+          Message us on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER FORM -->
+<section class="order-form" id="order">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Order enquiry</span>
+      <h2>Tell us about your order</h2>
+      <p>Fill in the form and we'll receive your details instantly on WhatsApp — we'll get back to you with a timeline.</p>
+    </div>
+    <form class="order-form-card reveal" id="orderForm">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="of-name">Your name *</label>
+          <input type="text" id="of-name" name="name" placeholder="e.g. Nethmi Perera" required>
+        </div>
+        <div class="form-field">
+          <label for="of-phone">Phone / WhatsApp number *</label>
+          <input type="tel" id="of-phone" name="phone" placeholder="e.g. 077 123 4567" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="of-occasion">Occasion</label>
+          <select id="of-occasion" name="occasion">
+            <option value="">Select an occasion</option>
+            <option>Birthday</option>
+            <option>Wedding</option>
+            <option>Anniversary</option>
+            <option>Baby shower</option>
+            <option>Corporate event</option>
+            <option>Just because</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="of-date">Date needed</label>
+          <input type="date" id="of-date" name="date">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="of-type">What would you like?</label>
+          <select id="of-type" name="type">
+            <option value="">Select a bake</option>
+            <option>Cake</option>
+            <option>Cupcakes</option>
+            <option>Brownies</option>
+            <option>Cookies</option>
+            <option>Celebration cake</option>
+            <option>Custom order</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="of-size">Size / servings</label>
+          <input type="text" id="of-size" name="size" placeholder="e.g. 1 kg, 12 cupcakes">
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="of-message">Flavour &amp; details</label>
+        <textarea id="of-message" name="message" rows="4" placeholder="Tell us about the flavour, theme, colours, message on the cake..."></textarea>
+      </div>
+      <div class="form-field">
+        <label>Reference image (optional)</label>
+        <div class="upload-box" id="uploadBox">
+          <input type="file" id="of-image" name="image" accept="image/*" hidden>
+          <button type="button" class="upload-btn" id="uploadBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 16V4m0 0L7 9m5-5l5 5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3" stroke-linecap="round"/></svg>
+            Upload a picture
+          </button>
+          <span class="upload-hint">Show us a design, theme or colour reference</span>
+          <div class="upload-preview" id="uploadPreview" hidden>
+            <img id="uploadPreviewImg" alt="Reference image preview">
+            <button type="button" class="upload-remove" id="uploadRemove" aria-label="Remove image">✕</button>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-dark form-submit">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 003.6 17.3L2 22l4.8-1.6a11 11 0 0013.7-16.9zM12 20a8.4 8.4 0 01-4.3-1.2l-.3-.2-3.2 1 1-3.1-.2-.3A8.4 8.4 0 1120 12a8.4 8.4 0 01-8 8zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.1-.3 0-.4.1-.6l.4-.5c.1-.1.2-.2.2-.4.1-.2 0-.5 0-.5L8.9 7.3c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+        Send enquiry on WhatsApp
+      </button>
+      <p class="form-note">Your details go straight to our WhatsApp — no account needed.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-news">
+      <div>
+        <h4>Get sweet updates</h4>
+        <p>New flavours, seasonal specials and order reminders — straight to your inbox.</p>
+      </div>
+      <form class="footer-news-form" id="newsForm">
+        <input type="text" name="news-name" placeholder="Your name" required aria-label="Your name">
+        <input type="email" name="news-email" placeholder="Email address" required aria-label="Email address">
+        <button type="submit" aria-label="Subscribe">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m0 0l-6-6m6 6l-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+    </div>
+    <div class="footer_inner">
+      <div>
+        <div class="logo">
+          <img src="logo.png" alt="Sweet Blooms by Abi logo">
+          <span>Sweet Blooms <span class="script">by Abi</span></span>
+        </div>
+        <span class="footer-tagline">Freshness in every bite ✿</span>
+        <div class="footer-social">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 2c-3.1 0-3.5 0-4.8.1-1.1.1-1.5.2-1.8.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.3-.3.7-.3 1.8-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.5.3 1.8.2.5.4.8.7 1.1.3.3.6.5 1.1.7.3.1.7.3 1.8.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.5-.2 1.8-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.3.3-.7.3-1.8.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.5-.3-1.8-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.3-.1-.7-.3-1.8-.3-1.3-.1-1.7-.1-4.8-.1zm0 3.3a5.5 5.5 0 110 11 5.5 5.5 0 010-11zm0 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.7-3.3a1.3 1.3 0 110 2.6 1.3 1.3 0 010-2.6z"/></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.6V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.3H7.6V13h2.7v8h3.2z"/></svg>
+          </a>
+          <a href="https://wa.me/94767691862" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 003.6 17.3L2 22l4.8-1.6a11 11 0 0013.7-16.9zM12 20a8.4 8.4 0 01-4.3-1.2l-.3-.2-3.2 1 1-3.1-.2-.3A8.4 8.4 0 1120 12a8.4 8.4 0 01-8 8zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.1-.3 0-.4.1-.6l.4-.5c.1-.1.2-.2.2-.4.1-.2 0-.5 0-.5L8.9 7.3c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="#order">Order</a>
+          <a href="#about">Our Story</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>WhatsApp: +94 76 769 1862<br>
+        Open daily: 9.00 AM – 9.00 PM<br>
+        Sri Lanka — local delivery available</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sweet Blooms by Abi. All rights reserved.</span>
+      <span>Made with love in Sri Lanka</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/94767691862?text=Hi%20Sweet%20Blooms%20by%20Abi%2C%20I%27d%20love%20to%20order%20a%20cake!" target="_blank" rel="noopener noreferrer" aria-label="Order on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M20.5 3.5A11 11 0 003.6 17.3L2 22l4.8-1.6a11 11 0 0013.7-16.9zM12 20a8.4 8.4 0 01-4.3-1.2l-.3-.2-3.2 1 1-3.1-.2-.3A8.4 8.4 0 1120 12a8.4 8.4 0 01-8 8zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.1-.3 0-.4.1-.6l.4-.5c.1-.1.2-.2.2-.4.1-.2 0-.5 0-.5L8.9 7.3c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script src="main.js?v=24"></script>
+
+</body>
+</html>

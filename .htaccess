@@ -1,0 +1,20 @@
+# Security headers for Apache hosting (cPanel, HostGator, etc.).
+# Served in addition to the CSP <meta> tag embedded in index.html and menu.html.
+
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "default-src 'none'; script-src 'self' file:; style-src 'self' 'unsafe-inline' file: https://fonts.googleapis.com; font-src 'self' file: https://fonts.gstatic.com; img-src 'self' data: blob: file: https://images.unsplash.com; connect-src 'self' file: https://fonts.googleapis.com https://fonts.gstatic.com; base-uri 'self' file:; form-action 'self' file:; frame-ancestors 'none'; upgrade-insecure-requests"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Permissions-Policy "camera=(), geolocation=(), microphone=(), payment=(), usb=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# Disable directory browsing (listing of folders)
+Options -Indexes
+
+# Serve the correct MIME type for favicons and images
+<IfModule mod_mime.c>
+  AddType image/x-icon .ico
+  AddType image/svg+xml .svg
+</IfModule>
