@@ -1945,7 +1945,9 @@ body.home .contact-card{ box-shadow:0 14px 34px rgba(43,33,24,0.06); }
 @media (max-width:640px){
   body.home .trust-strip-inner{ grid-template-columns:1fr; }
   body.home .hero-visual{ min-height:clamp(260px, 78vw, 340px); }
-  body.home .hero-img-float{ width:clamp(90px, 26vw, 120px); }
+  /* Phone: hide the two floating cards so the collage reads as one clean
+     cake photo (no "cake with 2 cupcakes" look); desktop keeps them */
+  body.home .hero-img-float{ display:none; }
   body.home .hero-img-float._1{ left:-4%; }
   body.home .hero-img-float._2{ right:-4%; }
 }

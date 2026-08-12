@@ -161,7 +161,9 @@ All colors, fonts and layout styles live in **`styles.css`**:
     "Order Now" → stat row (~90–150ms stagger), then the photo collage
     **scale-fades in** (0.95 → 1) slightly after the text
   - The two floating cards **float continuously** (translateY ±6px, 4.5–5s
-    loop) with a **soft pink glow shadow** instead of grey
+    loop) with a **soft pink glow shadow** instead of grey — **hidden on
+    phones (≤640px)** so the hero collage reads as one clean cake photo
+    instead of a "cake with 2 cupcakes" composition
   - Micro-interactions: "Order Now" **scales up 1.03 with a pink shadow-lift**
     on hover (~150ms); the "Fresh today" badge has a slow subtle **pink pulse**
   - The hero's **"View Menu"** button is a visible **pink outline pill with a
